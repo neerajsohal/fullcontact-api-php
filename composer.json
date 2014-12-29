@@ -1,5 +1,5 @@
 {
-    "name": "fullcontact/sdk",
+    "name": "neerajsohal/full-contact",
     "type": "library",
     "description": "A PHP wrapper for Full Contacts's API",
     "keywords": ["fullcontact", "address", "api"],
