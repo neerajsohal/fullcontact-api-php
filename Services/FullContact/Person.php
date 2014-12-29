@@ -30,37 +30,37 @@ class Services_FullContact_Person extends Services_FullContact
     protected $_supportedMethods = array('email', 'phone', 'twitter', 'facebookUsername');
     protected $_resourceUri = '/person.json';
 
-    public function lookupByEmail($search)
+    public function lookupByEmail($search, $params = array())
     {
-        $this->_execute(array('email' => $search, 'method' => 'email'));
+        $this->_execute(array_merge(array('email' => $search, 'method' => 'email'), $params));
 
         return $this->response_obj;
     }
 
-    public function lookupByEmailMD5($search)
+    public function lookupByEmailMD5($search, $params = array())
     {
-        $this->_execute(array('emailMD5' => $search, 'method' => 'email'));
+        $this->_execute(array_merge(array('emailMD5' => $search, 'method' => 'email'), $params));
 
         return $this->response_obj;
     }
 
-    public function lookupByPhone($search)
+    public function lookupByPhone($search, $params = array())
     {
-        $this->_execute(array('phone' => $search, 'method' => 'phone'));
+        $this->_execute(array_merge(array('phone' => $search, 'method' => 'phone'), $params));
 
         return $this->response_obj;
     }
 
-    public function lookupByTwitter($search)
+    public function lookupByTwitter($search, $params = array())
     {
-        $this->_execute(array('twitter' => $search, 'method' => 'twitter'));
+        $this->_execute(array_merge(array('twitter' => $search, 'method' => 'twitter'), $params));
 
         return $this->response_obj;
     }
 
-    public function lookupByFacebook($search)
+    public function lookupByFacebook($search, $params = array())
     {
-        $this->_execute(array('facebookUsername' => $search, 'method' => 'facebookUsername'));
+        $this->_execute(array_merge(array('facebookUsername' => $search, 'method' => 'facebookUsername'), $params));
 
         return $this->response_obj;
     }
