@@ -3,15 +3,15 @@
     "type": "library",
     "description": "A PHP wrapper for Full Contacts's API",
     "keywords": ["fullcontact", "address", "api"],
-    "homepage": "http://github.com/fullcontact/fullcontact-api-php",
+    "homepage": "http://github.com/neerajsohal/fullcontact-api-php",
     "license": "Apache",
     "authors": [
         {
             "name": "FullContact"
         },
         {
-            "name": "Keith Casey",
-            "email": "contrib@caseysoftware.com"
+            "name": "Neeraj Kumar",
+            "email": "hello@neerajkumar.name"
         }
     ],
     "require": {
